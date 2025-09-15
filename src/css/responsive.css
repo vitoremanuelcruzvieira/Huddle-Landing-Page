@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1440px) {
+
+    .container .wrapper .main .image-left img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container .wrapper .main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .wrapper .main .text-right h1 {
+        font-size: 26px;
+    }
+
+    .container .wrapper .social { 
+        justify-content: center;
+        margin-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .container .wrapper .main .text-right a {
+        padding: 10px 70px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container .wrapper .header img {
+       width: 130px;
+       margin-bottom: 10px;
+    }
+
+     .container .wrapper .social { 
+        padding-bottom: 40px;
+    }
+}

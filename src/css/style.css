@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    background: url('../images/bg-desktop.svg') no-repeat center;
+    background-size: cover;
+    background-color: var(--bg-desktop);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container .wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 0 2rem;
+}
+
+.container .wrapper .header img {
+    width: 190px;
+    padding-bottom: 20px;
+}
+
+.container .wrapper .main {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.container .wrapper .main .text-right h1 {
+    color: var(--bg-white);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.container .wrapper .main .text-right p {
+    color: var(--bg-white);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.container .wrapper .main .text-right a {
+    background-color: var(--bg-white);
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 50px;
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .8);
+    transition: all .3s ease-in-out;
+}
+
+.container .wrapper .main .text-right a:hover {
+    background-color: var(--bg-button);
+    color: var(--bg-white);
+}
+
+.container .wrapper .social {
+    display: flex;
+    justify-content: end;
+}
+
+.container .wrapper .social a i {
+    color: var(--bg-white);
+    font-size: 18px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.container .wrapper .social a i::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--bg-white);
+    border-radius: 50%;
+    left: -11px;
+    bottom: -11px;
+    transition: all .3s ease-in-out;
+}
+
+.container .wrapper .social a:hover i {
+    color: var(--bg-button);
+} 
+
+.container .wrapper .social a i:hover::after {
+    border-color: var(--bg-button);
+}
+
+.container .wrapper .social a:not(:first-child) {
+    margin-left: 2rem;
+}
