@@ -48,6 +48,7 @@ body {
 
 .container .wrapper .main .text-right a {
     background-color: var(--bg-white);
+    color: var(--bg-desktop);
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     padding: 15px 50px;
